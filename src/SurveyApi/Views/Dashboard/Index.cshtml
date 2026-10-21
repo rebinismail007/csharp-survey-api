@@ -1,0 +1,12 @@
+@model List<SurveyApi.SurveyBrief>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Survey API overview</title>
+<style>body{font:17px system-ui;max-width:850px;margin:64px auto;padding:0 20px;color:#14362b;background:#f5f8f6}table{border-collapse:collapse;width:100%;background:white}th,td{text-align:left;padding:16px;border-bottom:1px solid #ddd}a{color:#156944}small{color:#50675b}</style></head>
+<body><small>C# / ASP.NET Core MVC / Entity Framework</small><h1>Team surveys</h1><p>Local demonstration with synthetic data.</p>
+<table><thead><tr><th>Questionnaire</th><th>Questions</th><th>Responses</th></tr></thead><tbody>
+@foreach (var survey in Model)
+{
+    <tr><td><a href="/api/surveys/@survey.Id">@survey.Title</a></td><td>@survey.QuestionCount</td><td>@survey.ResponseCount</td></tr>
+}
+</tbody></table><p><a href="/api/surveys">Browse the JSON API</a></p></body></html>
