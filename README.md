@@ -4,7 +4,7 @@ A small survey service for anonymous team feedback. Create questionnaires,
 submit one score per question and inspect aggregated results. Includes an
 ASP.NET MVC overview at `/dashboard`.
 
-New AI-assisted learning project, October 2026. Uses fictional questions and
+New learning project, October 2026. Uses fictional questions and
 sample responses; it is not a previous employer's system.
 
 ## What the code demonstrates
